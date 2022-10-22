@@ -28,6 +28,7 @@ public class VehiculosForm {
 	
 	public Vehiculos catchVehiculos() {
 		Vehiculos b = new Vehiculos();
+		ServiciosForm s = new ServiciosForm();
 		System.out.println("Marca: ");
 		scan.nextLine();
 		b.setMarca(scan.nextLine());  
@@ -35,6 +36,20 @@ public class VehiculosForm {
 		System.out.println("Modelo: ");
 		b.setModelo(scan.nextLine());
 		
+		
+		System.out.println("año: ");
+		b.setYear(scan.nextLine());
+		
+		System.out.println("chasis: ");
+		b.setChasis(scan.nextLine());
+		
+		
+		System.out.println("placa: ");
+		b.setPlaca(scan.nextLine());
+		
+		
+		
+		s.showService();
 		return b;
 	}
 	
